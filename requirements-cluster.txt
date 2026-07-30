@@ -1,0 +1,9 @@
+# Minimal-Abhaengigkeiten fuer die Mask-R-CNN-Stage-1-Laeufe auf dem Cluster.
+# WICHTIG: torch/torchvision passend zur CUDA-Version des Clusters installieren
+# (z.B. ueber den passenden --index-url von pytorch.org oder das Cluster-Modulsystem).
+torch
+torchvision
+numpy
+opencv-python-headless
+pillow
+pycocotools

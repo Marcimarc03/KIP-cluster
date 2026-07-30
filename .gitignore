@@ -1,0 +1,17 @@
+/data/
+.venv/
+__pycache__/
+*.safetensors
+# Grosse Stage-2 Heatmap-Maps (aus metrics.json/scores.csv rekonstruierbar; nicht versionieren)
+*.npz
+# Grosse Stage-1 Prediction-Dumps (>100 MB, aus Checkpoints reproduzierbar; nicht versionieren)
+coco_predictions.json
+# Modellgewichte
+*.pt
+# Transfer-Tarballs / Archive (nur zum Kopieren, nicht versionieren)
+*.tgz
+*.tar.gz
+*.zip
+# summary.csv wird aus metrics.json regeneriert (aggregate_stage1.py) und
+# erzeugt beim Mergen staendig Konflikte -> nicht versionieren
+results/component_benchmark/summary.csv
