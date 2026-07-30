@@ -1,0 +1,34 @@
+# 26.04.2026, MA Timo Lizak
+#
+# Merged dataset object_segmentation_real and bevel_gear_spindle_closeup
+#
+# Minimized version! - Images scaled to 1088 px (26.04.2026)
+#
+# - Note on the closeup images
+# Simplified polygon masks via "simplify_masks_shapely.py"
+# TOLERANCE = 0.005
+# -
+#
+# train: 771 images
+# val: 191 images
+#
+# Dataset for fine-tuning after synthetic pre-training
+# Same ID-to-label-mappings as synthetic dataset
+
+
+train: images/train
+val: images/val
+
+nc: 9
+
+names:
+  0: anti-vibration_handle
+  1: bearing_plate
+  2: bevel_gear_drive
+  3: bevel_gear_spindle
+  4: gearbox_housing
+  5: intermediate_gearbox
+  6: motor_housing
+  7: shaft
+  8: wheel_guard
+ 
